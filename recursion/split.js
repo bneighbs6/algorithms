@@ -38,11 +38,7 @@ function split(text, separator) {
   return restSolution;
 }
 
-console.log(
-    split("Hello world", " ")
-    );
-
-
+console.log(split("Hello world", " "));
 
 function power(base, exponent) {
   if (exponent < 0) {

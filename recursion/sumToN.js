@@ -11,13 +11,13 @@
   // Summation
   return n + subproblemSum; */
 
-  function sum(n) {
-    // Check the base case
-    if (n === 1) {
-      return 1;
-    }
-  
-    return n + sum(n - 1);
+function sum(n) {
+  // Check the base case
+  if (n === 1) {
+    return 1;
   }
 
-  console.log(sum(5));
+  return n + sum(n - 1);
+}
+
+console.log(sum(5));
