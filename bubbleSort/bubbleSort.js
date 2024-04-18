@@ -20,8 +20,6 @@ function bubbleSort(compare, elements) {
   return elements;
 }
 
-module.exports = bubbleSort;
-
 function compare(left, right) {
   console.log("compare", left, "to", right);
   return left - right;
@@ -29,3 +27,5 @@ function compare(left, right) {
 
 const elements = [4685, 471, 880, 808];
 console.log(bubbleSort(compare, elements));
+
+module.exports = bubbleSort;
