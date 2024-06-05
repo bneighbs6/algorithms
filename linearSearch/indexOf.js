@@ -1,15 +1,18 @@
 // indexOf will find first matching element in an array
 
 function indexOf(isMatch, elements) {
+  // Verifying elements is an array
   if (Array.isArray(elements)) {
-    // Verifying elements is an array
+    // Loop thru
     for (let index = 0, length = elements.length; index < length; index++) {
-      // Loop thru
+      // Conditional Statement
+      // if isMatch()(callback fx)....
       if (isMatch(elements[index], index, elements)) {
         return index;
       }
     }
   }
+  // Return -1 if no element matches
   return -1;
 }
 

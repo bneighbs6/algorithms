@@ -14,4 +14,4 @@ function factorial(number, total = 1) {
   return total;
 }
 
-console.log(factorial(5000));
+console.log(factorial(5));

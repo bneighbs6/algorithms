@@ -3,9 +3,9 @@ function mazeSolver(maze, x = 0, y = 0) {
 
   const columns = maze[0].length - 1;
 
-  // Base Case
+  // Base Case - MISTAKE: I put x > colummns, y > rows; should be x > rows, y > columns
   if (x < 0 || x > columns || y < 0 || y > rows) {
-    // MISTAKE: x needs to be > rows; y > columns
+    // 
     return "x and y must be >= 0";
   }
 
